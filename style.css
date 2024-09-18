@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure {
+    margin-bottom: 1em;
+}
+
+.main-header {
+    overflow: hidden;
+}
+
+.main-content {
+    min-height: 70vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+}
+
+.columns {
+    column-count: 3;
+}
+
+h2 {
+    column-span: all;
+}
+
+
+
+:root {
+    --color-base: 190;
+
+    --color-sub-black: hsl(var(--color-base), 42%, 8%);
+    --color-grey-dark: hsl(var(--color-base), 34%, 13%);
+    --color-grey-mid-dark: hsl(var(--color-base), 34%, 34%);
+    --color-grey-mid: hsl(var(--color-base), 21%, 55%);
+    --color-grey-mid-light: hsl(var(--color-base), 13%, 76%);
+    --color-grey-light: hsl(var(--color-base), 13%, 89%);
+    --color-sub-white: hsl(var(--color-base), 8%, 97%);
+    
+    --color-accent-a: rgb(255,128,0);
+}
+
+body {
+    background: var(--color-grey-dark);
+}
+
+.main-header {
+    background: var(--color-grey-mid-dark);
+}
+
+.main-content {
+    background: var(--color-sub-white);
+}
+
+.main-header,
+.main-header a,
+.main-footer,
+.main-footer a {
+    color: var(--color-grey-light);
+}
+
+a:hover,
+a:active {
+    color: var(--color-accent-a);
+}
+
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+@font-face {
+    font-family: 'MeinFont';
+    src: url('assets/fonts/MeinFont.woff2') format('woff2'),
+         url('assets/fonts/MeinFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Mobilmenü verstecken */
+    }
+}
