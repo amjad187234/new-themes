@@ -1,9 +1,7 @@
 <footer>
-    <nav>
-        <?php wp_nav_menu(array('theme_location' => 'footer-menu')); ?>
-    </nav>
-    <p>&copy; <?php echo date('Y'); ?> Deine Website</p>
-    <?php wp_footer(); ?>
+    <p>&copy; 2024 <?php bloginfo('name'); ?> - Alle Rechte vorbehalten</p>
 </footer>
+
+<?php wp_footer(); ?>
 </body>
 </html>
